@@ -8,6 +8,8 @@ The development environment should be configured correctly with the proper deplo
 
 ### How to use libraries developed for old pragma without modification?
 
+The main idea is to create a mockup of the lib using the current pragma and then replace it with the real lib via linking during deployment.
+
 To use an old library with an outdated pragma version, it is recommended to follow this approach:
 
 1. Create a wrapper library contract (using outdated pragma) with external functions instead of internal (if needed)
